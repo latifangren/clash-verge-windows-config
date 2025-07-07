@@ -67,93 +67,22 @@ proxy-providers:
       lazy: true
 
 proxy-groups:
-  - name: 🛡️ AdBlock
-    type: select
-    proxies:
-      - REJECT
-      - 🔌 USB
-      - 🌐 LAN
-  - name: 🚀 Speedtest
-    type: select
-    proxies:
-      - ⚖️ LB
-      - 🔌 USB
-      - 🌐 LAN
-  - name: 🎮 Steam
-    type: select
-    proxies:
-      - 🎮 Steam-LAN-WARP
-      - ⚖️ LB
-      - 🔌 USB
-      - 🌐 LAN
-  - name: ⚔️ BattleNet
-    type: select
-    proxies:
-      - ⚔️ BattleNet-LAN-WARP
-      - ⚖️ LB
-      - 🔌 USB
-      - 🌐 LAN
-  - name: 🎯 EA-Games
-    type: select
-    proxies:
-      - 🎯 EA-Games-LAN-WARP
-      - ⚖️ LB
-      - 🔌 USB
-      - 🌐 LAN
-  - name: 📺 Streaming
-    type: select
-    proxies:
-      - 🇮🇩 WARP-ID
-      - 🇸🇬 WARP-SG
-      - 🔌 USB
-      - 🌐 LAN
-  - name: 🔄 Auto-Proxies
+  - name: 🤖 AUTO
     type: fallback
-    use:
-      - WARP-ID
-      - WARP-SG
-      - WARP-US
-  - name: ⚡ Best Ping-Proxies
-    type: url-test
-    use:
-      - WARP-ID
-      - WARP-SG
-      - WARP-US
-    url: https://cp.cloudflare.com/generate_204
-    interval: 300
-    timeout: 5
-    tolerance: 50
-    lazy: true
-  - name: 🔌 USB
-    type: select
     proxies:
-      - USB-DIRECT
-      - 🔄 Auto-Proxies
-      - ⚡ Best Ping-Proxies
-  - name: 🌐 LAN
-    type: select
-    proxies:
-      - LAN-DIRECT
       - 🇮🇩 WARP-ID
       - 🇸🇬 WARP-SG
       - 🇺🇸 WARP-US
-      - 🔄 Auto-Proxies
-      - ⚡ Best Ping-Proxies
-  - name: 🤖 Auto
-    type: fallback
+
+  - name: 🔌 USB-DIRECT
+    type: select
     proxies:
-      - 🔌 USB
-      - 🌐 LAN
-  - name: ⚖️ LB
-    type: load-balance
+      - USB-DIRECT
+
+  - name: 🌐 LAN-DIRECT
+    type: select
     proxies:
-      - 🔌 USB
-      - 🌐 LAN
-    url: https://cp.cloudflare.com/generate_204
-    interval: 30
-    strategy: round-robin
-    lazy: true
-    disable-udp: false
+      - LAN-DIRECT
 
   - name: 🇮🇩 WARP-ID
     type: select
@@ -169,32 +98,31 @@ proxy-groups:
     type: select
     use:
       - WARP-US
-  - name: ⚔️ BattleNet-LAN-WARP
-    type: select
-    proxies:
-      - 🇮🇩 WARP-ID
-      - 🇸🇬 WARP-SG
-      - 🇺🇸 WARP-US
-      - 🔄 Auto-Proxies
-      - ⚡ Best Ping-Proxies
 
-  - name: 🎮 Steam-LAN-WARP
+  - name: 📺 STREAMING
     type: select
     proxies:
       - 🇮🇩 WARP-ID
       - 🇸🇬 WARP-SG
       - 🇺🇸 WARP-US
-      - 🔄 Auto-Proxies
-      - ⚡ Best Ping-Proxies
 
-  - name: 🎯 EA-Games-LAN-WARP
+  - name: 🎮 GAMES
     type: select
     proxies:
       - 🇮🇩 WARP-ID
       - 🇸🇬 WARP-SG
       - 🇺🇸 WARP-US
-      - 🔄 Auto-Proxies
-      - ⚡ Best Ping-Proxies
+
+  - name: ⚖️ LB-LAN-USB
+    type: load-balance
+    proxies:
+      - 🔌 USB-DIRECT
+      - 🌐 LAN-DIRECT
+    url: https://cp.cloudflare.com/generate_204
+    interval: 30
+    strategy: round-robin
+    lazy: true
+    disable-udp: false
 
 dns:
   enable: true
@@ -293,15 +221,15 @@ rule-providers:
 rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Reject,REJECT
-  - RULE-SET,AdBlock,🛡️ AdBlock
-  - RULE-SET,Speedtest,🚀 Speedtest
-  - RULE-SET,Streaming,📺 Streaming
-  - RULE-SET,Steam,🎮 Steam
-  - RULE-SET,BattleNet,⚔️ BattleNet
-  - RULE-SET,EA-Games,🎯 EA-Games
+  - RULE-SET,AdBlock,REJECT
+  - RULE-SET,Speedtest,GLOBAL
+  - RULE-SET,Streaming,📺 STREAMING
+  - RULE-SET,Steam,🎮 GAMES
+  - RULE-SET,BattleNet,🎮 GAMES
+  - RULE-SET,EA-Games,🎮 GAMES
+  - RULE-SET,Umum,GLOBAL
   - DOMAIN,wowhead.com,🇺🇸 WARP-US
   - DOMAIN-SUFFIX,wowhead.com,🇺🇸 WARP-US
-  - RULE-SET,Umum,GLOBAL
   - MATCH,GLOBAL
 
 profile:
