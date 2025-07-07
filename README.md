@@ -102,7 +102,7 @@ Konfigurasi ini mendukung penggunaan dua koneksi internet secara bersamaan, yait
 
 ## Catatan
 - File ini sudah dioptimalkan untuk penggunaan multi-proxy, adblock, dan bypass region.
-- Untuk bantuan lebih lanjut, kunjungi [GitHub Clash](https://github.com/Dreamacro/clash) atau [Clash Verge](https://github.com/zzzgydi/clash-verge).
+- Untuk bantuan lebih lanjut, kunjungi [Original Website](https://clash-verge.org/) atau [Clash Verge](https://github.com/clash-verge-rev/clash-verge-rev).
 
 ---
 
