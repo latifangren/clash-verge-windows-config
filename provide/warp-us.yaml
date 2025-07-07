@@ -1,0 +1,56 @@
+proxies:
+  - name: "🇺🇸 Google LLC [34.105.49.234]"
+    type: trojan
+    server: ava.game.naver.com
+    port: 443
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    sni: ava.game.naver.com.privasi.turah.my.id
+    udp: true
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy-34.105.49.234-443
+      headers:
+        Host: ava.game.naver.com.privasi.turah.my.id
+    tls: true
+
+  - name: "🇺🇸 Cloudflare London [104.168.102.163]"
+    type: trojan
+    server: ava.game.naver.com
+    port: 443
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    sni: ava.game.naver.com.privasi.turah.my.id
+    udp: true
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy-104.168.102.163-443
+      headers:
+        Host: ava.game.naver.com.privasi.turah.my.id
+    tls: true
+
+  - name: "🇺🇸 Cloudflare [107.173.87.103]"
+    type: trojan
+    server: ava.game.naver.com
+    port: 443
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    sni: ava.game.naver.com.privasi.turah.my.id
+    udp: true
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy-107.173.87.103-443
+      headers:
+        Host: ava.game.naver.com.privasi.turah.my.id
+    tls: true
+
+  - name: "🇺🇸 BG-NETWORK [91.149.239.62]"
+    type: trojan
+    server: ava.game.naver.com
+    port: 443
+    password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+    sni: ava.game.naver.com.privasi.turah.my.id
+    udp: true
+    network: ws
+    ws-opts:
+      path: /Free-CF-Proxy-91.149.239.62-443
+      headers:
+        Host: ava.game.naver.com.privasi.turah.my.id
+    tls: true

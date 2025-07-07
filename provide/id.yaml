@@ -1,0 +1,26 @@
+proxies:
+- name: ID Amazon.com
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-43.218.77.16-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+- name: ID "Amazon.com
+  type: vless
+  server: ava.game.naver.com
+  port: 443
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-43.218.77.16-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+  encryption: none

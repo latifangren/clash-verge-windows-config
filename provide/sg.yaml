@@ -1,0 +1,123 @@
+proxies:
+- name: SG "Amazon.com
+  type: vless
+  server: ava.game.naver.com
+  port: 443
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-54.169.229.188-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+  encryption: none
+- name: SG Viewqwest Pte Ltd
+  type: vless
+  server: ava.game.naver.com
+  port: 443
+  uuid: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-143.42.66.91-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+  encryption: none
+- name: SG Digital Ocean
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.najah.biz.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-104.248.145.216-443
+    headers:
+      Host: ava.game.naver.com.privasi.najah.biz.id
+- name: SG Digital Ocean 2
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-178.128.80.43-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+- name: SG Amazon Technologies Inc.
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.ndeso.web.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-13.228.155.72-443
+    headers:
+      Host: ava.game.naver.com.privasi.ndeso.web.id
+- name: SG Amazon Data Services Singapore
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-13.250.131.37-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+- name: SG OVH Singapore PTE. LTD
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-51.79.254.182-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+- name: SG Viewqwest Pte Ltd 2
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-143.42.66.91-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+- name: SG Oracle Corporation
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-138.2.64.229-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id
+- name: SG "Vultr Holdings
+  type: trojan
+  server: ava.game.naver.com
+  port: 443
+  password: aaaaaaa1-bbbb-4ccc-accc-eeeeeeeeeee1
+  sni: ava.game.naver.com.privasi.turah.my.id
+  network: ws
+  tls: true
+  ws-opts:
+    path: /Free-CF-Proxy-139.180.154.158-443
+    headers:
+      Host: ava.game.naver.com.privasi.turah.my.id

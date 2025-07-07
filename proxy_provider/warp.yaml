@@ -1,0 +1,54 @@
+proxies:
+  - name: "WARP+ 01"
+    type: wireguard
+    server: 162.159.193.10
+    port: 443
+    ip: 172.16.0.2
+    private-key: 4CZ130nx-0t58T1Us-bu64X7a5
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    pre-shared-key: ""
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    mtu: 1280
+    udp: true
+    remote-dns-resolve: true
+
+  - name: "WARP+ 02"
+    type: wireguard
+    server: 162.159.193.10
+    port: 443
+    ip: 172.16.0.3
+    private-key: 4mV63ZF5-350bJP8t-64d27UIX
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    pre-shared-key: ""
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    mtu: 1280
+    udp: true
+    remote-dns-resolve: true
+
+  - name: "WARP+ 03"
+    type: wireguard
+    server: 162.159.193.10
+    port: 443
+    ip: 172.16.0.4
+    private-key: W69Iv04L-Q69v1K2D-Ii60P4k7
+    public-key: bmXOC+F1FxEMF9dyiK2H5/1SUtzH0JuVo51h2wPfgyo=
+    pre-shared-key: ""
+    dns:
+      - 1.1.1.1
+      - 1.0.0.1
+    mtu: 1280
+    udp: true
+    remote-dns-resolve: true
+
+proxy-groups:
+  - name: "WARP+"
+    type: select
+    proxies:
+      - WARP+ 01
+      - WARP+ 02
+      - WARP+ 03
+      - DIRECT 
