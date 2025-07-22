@@ -67,10 +67,6 @@ payload:
   - DOMAIN-SUFFIX,rocksdb.org
   - DOMAIN-SUFFIX,whatsapp.com
   - DOMAIN-SUFFIX,whatsapp.net
-  # > Github
-  - DOMAIN-SUFFIX,github.com
-  - DOMAIN-SUFFIX,github.io
-  - DOMAIN-SUFFIX,githubusercontent.com
   # > Google
   - DOMAIN-SUFFIX,appspot.com
   - DOMAIN-SUFFIX,blogger.com

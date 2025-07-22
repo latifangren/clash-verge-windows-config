@@ -7,7 +7,7 @@ mode: rule
 allow-lan: true
 log-level: info
 unified-delay: true
-external-controller: 0.0.0.0:9097
+external-controller: 0.0.0.0:9090
 secret: 123456
 bind-address: "*"
 external-ui: ./dashboard
@@ -78,7 +78,7 @@ proxy-groups:
     type: select
     proxies:
       - USB-DIRECT
-
+  
   - name: 🌐 LAN-DIRECT
     type: select
     proxies:
@@ -98,7 +98,13 @@ proxy-groups:
     type: select
     use:
       - WARP-US
-
+  - name: Ai-Gh
+    type: select
+    proxies:
+      - 🌐 LAN-DIRECT
+      - 🇮🇩 WARP-ID
+      - 🇸🇬 WARP-SG
+      - 🇺🇸 WARP-US
   - name: 📺 STREAMING
     type: select
     proxies:
@@ -106,7 +112,6 @@ proxy-groups:
       - 🇮🇩 WARP-ID
       - 🇸🇬 WARP-SG
       - 🇺🇸 WARP-US
-
   - name: 🎮 GAMES
     type: select
     proxies:
@@ -171,6 +176,12 @@ rule-providers:
     path: "./rule_provider/direct.yaml"
     interval: 86400
     download-detour: DIRECT
+  Ai-Gh:
+    type: http
+    behavior: classical
+    url: "https://raw.githubusercontent.com/latifangren/clash-verge-windows-config/refs/heads/main/rule_provider/ai-gh.yaml"
+    path: "./rule_provider/ai-gh.yaml"
+    interval: 86400
   Umum:
     type: http
     behavior: classical
