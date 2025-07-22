@@ -236,6 +236,7 @@ rules:
   - RULE-SET,Reject,REJECT
   - RULE-SET,AdBlock,REJECT
   - RULE-SET,Speedtest,GLOBAL
+  - RULE-SET,Ai-Gh,Ai-Gh
   - RULE-SET,Streaming,📺 STREAMING
   - RULE-SET,Steam,🎮 GAMES
   - RULE-SET,BattleNet,🎮 GAMES
