@@ -31,11 +31,11 @@ tun:
 proxies:
   - name: USB-DIRECT
     type: direct
-    interface-name: "Ethernet"  # Ganti dengan nama interface yang benar
+    interface-name: "Ethernet 2"  # Ganti dengan nama interface yang benar
 
   - name: LAN-DIRECT
     type: direct
-    interface-name: "Ethernet 2"  # Ganti dengan nama interface yang benar
+    interface-name: "Ethernet"  # Ganti dengan nama interface yang benar
 
 proxy-providers:
   WARP-ID:
@@ -102,6 +102,7 @@ proxy-groups:
   - name: 📺 STREAMING
     type: select
     proxies:
+      - 🌐 LAN-DIRECT
       - 🇮🇩 WARP-ID
       - 🇸🇬 WARP-SG
       - 🇺🇸 WARP-US
@@ -109,6 +110,7 @@ proxy-groups:
   - name: 🎮 GAMES
     type: select
     proxies:
+      - 🌐 LAN-DIRECT
       - 🇮🇩 WARP-ID
       - 🇸🇬 WARP-SG
       - 🇺🇸 WARP-US
