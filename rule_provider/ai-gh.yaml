@@ -25,12 +25,81 @@ payload:
   - DOMAIN-SUFFIX,gemini.google.com
   - DOMAIN-SUFFIX,bard.google.com
 
+  # Microsoft AI (Copilot, Bing Chat)
+  - DOMAIN-SUFFIX,copilot.microsoft.com
+  - DOMAIN-SUFFIX,bing.com
+  - DOMAIN-SUFFIX,edge.com
+
+  # Perplexity AI
+  - DOMAIN-SUFFIX,perplexity.ai
+
+  # Poe (Quora's AI Platform)
+  - DOMAIN-SUFFIX,poe.com
+
+  # Character.AI
+  - DOMAIN-SUFFIX,character.ai
+
+  # Midjourney
+  - DOMAIN-SUFFIX,midjourney.com
+  - DOMAIN-SUFFIX,cdn.midjourney.com
+
+  # DALL-E (OpenAI Image Generation)
+  - DOMAIN-SUFFIX,labs.openai.com
+
+  # Stable Diffusion
+  - DOMAIN-SUFFIX,stability.ai
+  - DOMAIN-SUFFIX,clipdrop.co
+
+  # Runway ML
+  - DOMAIN-SUFFIX,runwayml.com
+
+  # ElevenLabs (AI Voice)
+  - DOMAIN-SUFFIX,elevenlabs.io
+
+  # Notion AI
+  - DOMAIN-SUFFIX,notion.so
+  - DOMAIN-SUFFIX,notion.site
+
+  # Grammarly AI
+  - DOMAIN-SUFFIX,grammarly.com
+
+  # Jasper AI
+  - DOMAIN-SUFFIX,jasper.ai
+
+  # Copy.ai
+  - DOMAIN-SUFFIX,copy.ai
+
+  # Writesonic
+  - DOMAIN-SUFFIX,writesonic.com
+
+  # Surfer SEO AI
+  - DOMAIN-SUFFIX,surfer.com
+
+  # ForgeCode
+  - DOMAIN-SUFFIX,forgecode.dev
+
   # Fallback untuk AI umum
   - DOMAIN-KEYWORD,openai
   - DOMAIN-KEYWORD,cursor
   - DOMAIN-KEYWORD,huggingface
   - DOMAIN-KEYWORD,claude
   - DOMAIN-KEYWORD,gemini
+  - DOMAIN-KEYWORD,copilot
+  - DOMAIN-KEYWORD,perplexity
+  - DOMAIN-KEYWORD,poe
+  - DOMAIN-KEYWORD,character
+  - DOMAIN-KEYWORD,midjourney
+  - DOMAIN-KEYWORD,stability
+  - DOMAIN-KEYWORD,runway
+  - DOMAIN-KEYWORD,elevenlabs
+  - DOMAIN-KEYWORD,notion
+  - DOMAIN-KEYWORD,grammarly
+  - DOMAIN-KEYWORD,jasper
+  - DOMAIN-KEYWORD,copy
+  - DOMAIN-KEYWORD,writesonic
+  - DOMAIN-KEYWORD,surfer
+  - DOMAIN-KEYWORD,forgecode
+
   # Github
   - DOMAIN-SUFFIX,github.com
   - DOMAIN-SUFFIX,githubusercontent.com
